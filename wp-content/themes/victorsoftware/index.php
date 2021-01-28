@@ -18,146 +18,32 @@
 
 <section class="center-articles">
 	<section class="articles">
-		<article class="article">
-			<figure> 
-				<img class="img-article" src=<?php echo get_template_directory_uri() .'/images/home.jpg'?> alt="Macbook Pro" />
-				<figcaption class="article-title">¿Cómo definir un namespace en C#?</figcaption>
-				<hr>
-				<figcaption class="description">
-					<span class="autor">Juan Castro</span>
-					<span class="date">abril 13 2017</span>
-				<figcaption>
-			</figure>					
-		</article>
-		<article class="article">
-			<figure> 
-				<img class="img-article" src=<?php echo get_template_directory_uri() .'/images/home.jpg'?> alt="Apple Watch series" />
-				<figcaption class="article-title">Todo lo que Facebook anunció en F8</figcaption>
-				<hr>
-				<figcaption class="description">
-					<span class="autor">Juan Castro</span>
-					<span class="date">abril 13 2017</span>
-				<figcaption>
-			</figure>					
-		</article>
-		<article class="article">					
-			<figure> 
-				<img class="img-article" src=<?php echo get_template_directory_uri() .'/images/profile.jpg'?> alt="Apple" />
-				<figcaption class="article-title">Lo nuevo en Android Studio 2.0</figcaption>
-				<hr>
-				<figcaption class="description">
-					<span class="autor">Juan Castro</span>
-					<span class="date">abril 13 2017</span>
-				<figcaption>
-			</figure>
-		</article>
-		<article class="article">					
-			<figure> 
-				<img class="img-article" src="img/coin-base.png" alt="Coin base" />
-				<figcaption class="article-title">Lo que tienes que saber sobre React</figcaption>
-				<hr>
-				<figcaption class="description">
-					<span class="autor">Juan Castro</span>
-					<span class="date">abril 13 2017</span>
-				<figcaption>
-			</figure>					
-		</article>
-		<article class="article">
-			<figure>
-				<img class="img-article" src="img/dell-xps.jpg" alt="Dell xps" />
-				<figcaption class="article-title">5 recomendaciones para proteger tus datos personales</figcaption>
-				<hr>
-				<figcaption class="description">	
-					<span class="autor">Juan Castro</span>
-					<span class="date">abril 13 2017</span>
-				<figcaption>
-			</figure>					
-		</article>
-		<article class="article">					
-			<figure> 
-				<img class="img-article" src="img/facebook.jpg" alt="Facebook" />
-				<figcaption class="article-title">Paso a paso: como trabajar con JSON en GO</figcaption>
-				<hr>
-				<figcaption class="description">
-					<span class="autor">Juan Castro</span>
-					<span class="date">abril 13 2017</span>
-				<figcaption>
-			</figure>
-		</article>
-		<article class="article">					
-				<figure> 
-					<img class="img-article" src="img/ghost-of-tsushima.jpg" alt="Ghost" />
-					<figcaption class="article-title">5 libros que deberías leer para aprender Diseño de Producto</figcaption>
-					<hr>
-					<figcaption class="description">
-						<span class="autor">Juan Castro</span>
-						<span class="date">abril 13 2017</span>
-					<figcaption>
-				</figure>						
-		</article>
-		<article class="article">					
-				<figure> 
-					<img class="img-article" src="img/inspire-drone.jpg" alt="Inspire Drone" />
-					<figcaption class="article-title">Platzi Stream cambia de horario esta semana</figcaption>
-					<hr>
-					<figcaption class="autor"> Juan Castro abril 13 2017<figcaption>
-				</figure>						
-		</article>
-		<article class="article">					
-				<figure> 
-					<img class="img-article" src="img/iphone.jpg" alt="IPhone" />
-					<figcaption class="article-title">5 recomendaciones para proteger datos personales en tu negocio</figcaption>
-					<hr>
-					<figcaption class="description">
-						<span class="autor">Juan Castro</span>
-						<span class="date">abril 13 2017</span>
-					<figcaption>
-				</figure>						
-		</article>
-		<article class="article">					
-				<figure> 
-					<img class="img-article" src="img/playstation.jpg" alt="playstation" />
-					<figcaption class="article-title">15 gemas para desarrollar con Ruby on Rails</figcaption>
-					<hr>
-					<figcaption class="description">
-						<span class="autor">Juan Castro</span>
-						<span class="date">abril 13 2017</span>
-					<figcaption>
-				</figure>						
-		</article>
-		<article class="article">					
-				<figure> 
-					<img class="img-article" src="img/time.jpg" alt="Time" />
-					<figcaption class="article-title">Lo que tienes que saber sobre Google Analytics 360 Suite</figcaption>
-					<hr>
-					<figcaption class="description">
-						<span class="autor">Juan Castro</span>
-						<span class="date">abril 13 2017</span>
-					<figcaption>
-				</figure>						
-		</article>
-		<article class="article">					
-				<figure> 
-					<img class="img-article" src="img/white-phone.jpg" alt="White phone" />
-					<figcaption class="article-title">Primeras impresiones de Adobe Experience Design</figcaption>
-					<hr>
-					<figcaption class="description">
-						<span class="autor">Juan Castro</span>
-						<span class="date">abril 13 2017</span>
-					<figcaption>
-				</figure>						
-		</article>
-		<article class="article">					
-				<figure> 
-					<img class="img-article" src="img/wifi.jpg" alt="Wifi" />
-					<figcaption class="article-title">Aprende a crear la iconografía perfecta</figcaption>
-					<hr>
-					<figcaption class="description">
-						<span class="autor">Juan Castro</span>
-						<span class="date">abril 13 2017</span>
-					<figcaption>
-				</figure>						
-		</article>
+		<?php query_posts( ['posts_per_page' => 6, 
+							'paged'          => (get_query_var('paged')) ? get_query_var('paged') : 1
+						]);?>
+		<?php if( have_posts()):?>
+			<?php while( have_posts()): the_post();?>
+				<article class="article">
+					<figure> 
+						<?php if( has_post_thumbnail() ): 
+								 $urlImg = wp_get_attachment_url( get_post_thumbnail_id( get_the_ID() ) ); 
+							   endif;
+						?>
+
+						<img class="img-article" src=<?php echo $urlImg;?> alt="Macbook Pro" />						
+						<figcaption class="article-title">
+							<?php the_title( sprintf('<a href="%s">', esc_url(get_permalink() ) ), '</a>');?>
+						</figcaption>
+						<hr>
+						<figcaption class="description">
+							<span class="autor"><?php the_category(' ');?></span>
+							<span class="date"><?php the_time('F j, Y');?></span>
+						<figcaption>
+					</figure>					
+				</article>
+			<?php endwhile;?>
+		<?php endif;?>
+		<?php wp_reset_query(); ?>
 	</section>
 </section>	
 

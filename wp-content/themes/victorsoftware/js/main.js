@@ -85,7 +85,7 @@ particlesJS("particles-js", {
       },
       "modes": {
         "grab": {
-          "distance": 140,
+          "distance": 350,
           "line_linked": {
             "opacity": 1
           }

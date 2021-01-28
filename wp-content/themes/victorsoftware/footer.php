@@ -2,7 +2,7 @@
 		<footer>
 			<p>This is my footer</p>
 		</footer>
-	</div> <!--.container-->
+	</section`> <!--.container-->
 
 	<?php wp_footer();?> <!-- It calls all footer included files -->
 

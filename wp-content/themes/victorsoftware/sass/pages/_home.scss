@@ -1,3 +1,35 @@
-body {
-    background-color: rgb(156, 156, 106) 
+.articles{
+	display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.articles figure{
+	margin: 27px 0;
+}
+
+.description{
+	display: flex;
+    justify-content: space-between;
+}
+
+.article-title{
+	font-size: 20px;
+	font-weight: 700;	
+	width: 307px;
+	color: #515151;
+}
+
+.autor span{
+	padding-top: 11px;
+    padding-left: 10px;
+}
+
+.date{
+	margin-right: -175px;
+}
+
+.img-article{
+	width: 317px;
+	height: 215px;
 }

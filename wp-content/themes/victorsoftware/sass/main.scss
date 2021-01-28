@@ -6,15 +6,20 @@
 @import 'layout/header';
 @import 'layout/footer';
 @import 'layout/sidebar';
+@import 'layout/center-main';
 
 @import 'components/buttons';
 @import 'components/slider';
+@import 'components/menu';
+@import 'components/logo';
 
 @import 'pages/home';
 @import 'pages/about';
 @import 'pages/blog';
 @import 'pages/news';
 @import 'pages/portfolio';
+
+@import 'vendors/_bootstrap.min';
 
 @import 'themes/theme';
 @import 'themes/admin';

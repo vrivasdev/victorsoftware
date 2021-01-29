@@ -1,0 +1,17 @@
+.single {
+    article {
+        a {
+            color: $orange;
+            text-decoration: none;
+        }
+    }
+    .single-content {
+        width: 50%;
+        padding-top: 4%;
+    }
+    .entry-title{
+        font-size: 40px;
+        font-weight: 700;	
+        color: $grey;
+    }
+}

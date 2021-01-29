@@ -1,0 +1,29 @@
+footer{
+	background: #273b47;
+	padding: 50px 10px;
+}
+
+.contact{
+	display: flex;
+	width: 300px;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.contact img{
+	display: block;
+}
+
+.contact strong{
+	display: block;
+}
+
+.contact a{
+	color: white;
+	text-decoration: none;
+	margin: 10px 10px 10px 0;	
+}
+
+.footer .container{
+	display: flex;
+	justify-content: space-between;
+}

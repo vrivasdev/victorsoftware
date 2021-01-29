@@ -1,0 +1,14 @@
+.paginator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: #737171;
+    margin: 70px 0;
+    a{
+        color: #515257;
+        border-radius: 2px;
+        font-weight: 700;
+        margin: 0 10px;
+    }
+}

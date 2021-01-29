@@ -1,0 +1,46 @@
+.blog-element {
+	display            : block;
+	height             : 200px;
+	overflow           : hidden;
+	background-position: center center;
+	background-repeat  : no-repeat;
+	background-size    : cover; /* 100% of element*/
+    color              : $whiteb; 
+    opacity: 0.8;
+    a {
+        color: $whiteb;
+        text-shadow: 0 1px 3px rgb(0 0 0 / 50%);
+        text-decoration: none;
+        &:hover {
+            color: $orange;
+        }
+    }
+    .entry-title {
+        padding: 10% 0;
+    }
+    &:hover {
+        transform: scale(1.10);
+        transition: all 0.5s;
+        opacity: 1;
+    }
+}
+
+.second-row-padding:nth-child(2) {
+	padding-right: 0;
+}
+
+.second-row-padding:nth-child(3) {
+	padding-left: 0;
+}
+
+.third-row-padding {
+	padding: 0;
+}
+
+.third-row-padding:nth-child(4) {
+	padding-left: 15px;
+}
+
+.third-row-padding:last-child {
+	padding-right: 15px;
+}

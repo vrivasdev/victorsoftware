@@ -1,9 +1,10 @@
 .header{
-	background-color: #273B47;
-	position: relative;
+	background-color: $bluetransp;
+	position: absolute;
 	height: 54px;
     font-weight: bold;
-    
+    width: 100%;
+    z-index: 1;
     .button{
         right: 0;
         position: absolute;

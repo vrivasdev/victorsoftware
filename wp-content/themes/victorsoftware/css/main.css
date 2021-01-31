@@ -1,10 +1,12 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,700,700i");
 .header {
-  background-color: #273B47;
-  position: relative;
+  background-color: rgba(4, 56, 75, 0.65);
+  position: absolute;
   height: 54px;
   font-weight: bold;
+  width: 100%;
+  z-index: 1;
 }
 .header .button {
   right: 0;
@@ -54,12 +56,13 @@ footer {
   color: #eda721;
 }
 
-.center-main, .center-articles {
-  padding: 0 13%;
+.center-articles {
+  padding: 0 10%;
 }
 
 .center-main {
   background-color: #EFEFEF;
+  padding: 0;
 }
 
 .main {
@@ -69,6 +72,7 @@ footer {
 .slider {
   height: 560px;
   position: relative;
+  opacity: 0.9;
 }
 
 .slider:hover .img-centered {
@@ -106,7 +110,8 @@ footer {
 }
 
 .title {
-  font-size: 32px;
+  font-family: RalewayExtraLight, sans-serif !important;
+  font-size: 2.28rem !important;
   font-weight: 700;
   width: 350px;
   color: #EFEFEF;
@@ -132,7 +137,7 @@ canvas {
   display: inline-block;
   position: absolute;
   right: 0;
-  margin-right: 160px;
+  margin-right: 85px;
   height: inherit;
 }
 .menu ul {
@@ -174,7 +179,8 @@ canvas {
 
 .logo {
   display: inline-block;
-  margin-left: 8px;
+  position: relative;
+  right: -96%;
 }
 
 .logo img {

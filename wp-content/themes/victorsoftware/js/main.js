@@ -1,7 +1,7 @@
 
 /* ---- particles.js config ---- */
 
-particlesJS("particles-js", {
+/*particlesJS("particles-js", {
     "particles": {
       "number": {
         "value": 150,
@@ -110,14 +110,24 @@ particlesJS("particles-js", {
       }
     },
     "retina_detect": true
-  });
+  });*/
 
-  
-/*(function($){
-  $(document).ready(function(){
-    setInterval(function() {
-      $('#menu a').animate({ color: 'red'}, 300)
-                  .animate({ color: 'green'}, 300)
-    }, 1000);
-  });
-});*/
+jQuery(document).ready(function($) {
+  $('#about-canvas').tagcanvas({
+    //textColour: '#ff0000',
+    outlineColour: '#ff00ff',
+    reverse: true,
+    depth: 0.7,
+    maxSpeed: 0.05,
+    textFont: null,
+    textColour: null,
+    weightMode:'both',
+    weight: true,
+    weightGradient: {
+     0:    '#f00', // red
+     //0.33: '#ff0', // yellow
+     //0.66: '#0f0', // green
+     1:    '#00f'  // blue
+    }
+  },'tags');
+});
